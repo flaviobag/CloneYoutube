@@ -8,13 +8,13 @@ import Header from '../Header';
 import Routes from '../../router/routes';
 
 const Page: React.FC = () => {
-  const [theme, setTheme] = React.useState('light');
+  const [theme] = React.useState('light');
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyle />
       <BrowserRouter>
         <Container>
-          <Header theme={theme} setTheme={setTheme} />
+          <Header />
           <main>
             <Routes />
           </main>

@@ -1,42 +1,31 @@
 import styled from 'styled-components';
-import { Link, NavLink } from 'react-router-dom';
+import { ReactComponent as Logo } from '../../assets/youtube.svg';
+import { ReactComponent as User } from '../../assets/user.svg';
 
-export const HeaderLink = styled(NavLink)`
-  color: ${({ theme }) => theme.colors.primary};
-
-  &:hover {
-    color: ${({ theme }) => theme.colors.orange};
-  }
+export const HeaderContainer = styled.div`
+  position: sticky;
+  background-color: ${({ theme }) => theme.colors.secondary};
+  height: 56px;
+  width: 100%;
 `;
 
-export const Toggle = styled.label`
-  background-color: ${({ theme }) => theme.colors.dark};
-  border-radius: 1rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+export const Icon = styled(Logo)`
+  width: 90px;
+  height: 20px;
   cursor: pointer;
-  display: block;
-  height: 30px;
-  padding: 2px;
-  position: relative;
-  width: 60px;
-
-  &::before {
-    background-color: ${({ theme }) => theme.colors.orange};
-    transition: transform 0.2s;
-    border-radius: 50%;
-    content: '';
-    height: 24px;
-    position: absolute;
-    right: 3px;
-    top: 3px;
-    width: 24px;
-  }
 `;
 
-export const Checkbox = styled.input`
-  display: none;
+export const Photo = styled(User)`
+  width: 90px;
+  height: 40px;
+  margin-left: 1800px;
+  margin-top: 8px;
+`;
 
-  &:checked + ${Toggle}::before {
-    transform: translateX(-30px);
-  }
+export const DivLink = styled.div`
+  height: 20px;
+  width: 90px;
+  position: absolute;
+  top: calc(50% - 10px);
+  margin-left: 20px;
 `;
