@@ -5,6 +5,7 @@ import { ReactComponent as User } from '../../assets/user.svg';
 export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: sticky;
   background-color: ${({ theme }) => theme.colors.secondary};
   height: 56px;
@@ -18,16 +19,12 @@ export const Icon = styled(Logo)`
 `;
 
 export const Photo = styled(User)`
-  position: relative;
   width: 90px;
-  top: calc(50% - 20px);
   height: 40px;
 `;
 
 export const DivLink = styled.div`
-  position: relative;
   height: 20px;
   width: 90px;
-  top: calc(50% - 16px);
   margin-left: 20px;
 `;
