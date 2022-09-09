@@ -6,3 +6,5 @@ export const NavBar = styled.nav`
   height: 968px;
   width: 240px;
 `;
+
+export const LinksContainer = styled.div``;
