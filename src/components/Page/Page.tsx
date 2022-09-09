@@ -6,6 +6,7 @@ import GlobalStyle from '../../config/GlobalStyle';
 import { lightTheme, darkTheme } from '../../config/theme';
 import Header from '../Header';
 import Routes from '../../router/routes';
+import SideBar from '../SideBar/SideBar';
 
 const Page: React.FC = () => {
   const [theme] = React.useState('light');
@@ -20,6 +21,7 @@ const Page: React.FC = () => {
           </main>
         </Container>
       </BrowserRouter>
+      <SideBar />
     </ThemeProvider>
   );
 };
