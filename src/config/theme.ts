@@ -8,11 +8,13 @@ const theme = {
 const lightTheme = {
   ...theme,
   colors: {
+    white: '#ffffff',
     primary: '#000000',
     secondary: '#212121',
     orange: '#FF8839',
-    light: '#F5EFED',
+    light: '#303030',
     dark: '#252323',
+    gray: '#AAAAAA',
   },
 };
 

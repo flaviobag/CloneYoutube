@@ -19,9 +19,9 @@ const Page: React.FC = () => {
           <main>
             <Routes />
           </main>
+          <SideBar />
         </Container>
       </BrowserRouter>
-      <SideBar />
     </ThemeProvider>
   );
 };
